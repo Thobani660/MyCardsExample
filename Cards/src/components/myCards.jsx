@@ -18,7 +18,7 @@ function Card(){
 //     document.getElementById("Cardheart").style.display = "none";
 //   }
 
-        console.log("Light theme attract bugs")
+        // console.log("Light theme attract bugs")
     return(
         <>
         <div className="Card">

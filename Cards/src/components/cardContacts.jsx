@@ -6,7 +6,7 @@ function Cardcontacts(){
                 <div className="Cont">
                     <div className="Contactspic"></div>
                     <div className="contactDetails">
-                        <h4 >Tiffany Heffiner</h4>
+                        <h4 style={{color:"black"}}>Tiffany Heffiner</h4>
                         <h6 style={{color:"grey"}}>(555) 555-4321</h6>
                     </div>
                 </div>
