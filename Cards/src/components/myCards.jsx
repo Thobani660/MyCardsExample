@@ -4,7 +4,7 @@ function Card(){
         <div className="Card">
         
             <div className="Cardpic">
-            <span class="ph--heart-thin"></span>
+            <span class="Cardheart"></span>
             </div>
             <div className="Cardprice"></div>
             <div className="Cardrooms"></div>
