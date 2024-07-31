@@ -8,6 +8,7 @@ function Card(){
 //   function Filled(){
 //     document.getElementsByClassName("solar--heart-bold").innerHTM = " World";
 //   }Filled()
+
 // function changeBackgroundColor() {
 //     document.getElementById("Cardheart").innerHTML.style.backgroundColor = "lightblue";
 //  }
@@ -17,7 +18,7 @@ function Card(){
 //     document.getElementById("Cardheart").style.display = "none";
 //   }
 
-
+        console.log("Light theme attract bugs")
     return(
         <>
         <div className="Card">
