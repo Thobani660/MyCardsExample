@@ -2,6 +2,7 @@ import Cardpic from "./cardPic";
 import Cardprice from "./cardPrice";
 import Cardrooms from "./cardRooms";
 import Cardcontacts from "./cardContacts";
+
 function Card(){
    
 //   function Filled(){
@@ -12,21 +13,18 @@ function Card(){
 //  }
 //  changeBackgroundColor()
 
-function myFunction() {
-    document.getElementById("Cardheart").style.display = "none";
-  }
+// function myFunction() {
+//     document.getElementById("Cardheart").style.display = "none";
+//   }
 
 
     return(
         <>
         <div className="Card">
-
             <Cardpic/>
-
             <Cardprice/>
             <Cardrooms/>
             <Cardcontacts/>
-        
         </div>
         </>
     )
