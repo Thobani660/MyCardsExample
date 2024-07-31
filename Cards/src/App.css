@@ -28,19 +28,17 @@ body{
   align-self: center;
   justify-content: center;
   margin-left: 34%;
-  margin-top: 8%;
+  margin-top: 6%;
   border-bottom: unset;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .Cardpic {
   width: 100%;
   height: 50%;
-  /* background-image: url("./source/istockphoto-1516938158-1024x1024.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
-  /* align-items: end; */
   color: white;
 
 }
