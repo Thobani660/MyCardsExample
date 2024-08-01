@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CiHeart } from "react-icons/ci";
 
 
-function Cardpic(){
+function Cardpic({accomodation}){
 
     const [isLiked, setIsliked]  = useState(false);
     // const [iconColor, setIconColor] = useState("red")

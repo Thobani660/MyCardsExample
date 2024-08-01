@@ -1,6 +1,6 @@
 import { IoBedOutline } from "react-icons/io5";
 
-function Cardrooms(){
+function Cardrooms({accomodation}){
     
     return(
         <>
@@ -9,7 +9,7 @@ function Cardrooms(){
                     <h3 style={{color:"black",
                     marginLeft:"2%"}}>3</h3><h5 
                     style={{marginLeft:"6px",
-                    marginTop:"5px"}}>Bedrooms</h5>
+                    marginTop:"5px"}}></h5>
                 </div>
                 <div style={{color:"grey",
                      display:"flex"}}><span className="mdi--bathroom" 
