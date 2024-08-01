@@ -6,7 +6,7 @@ function Cardpic(){
 
     const [isLiked, setIsliked]  = useState(false);
     // const [iconColor, setIconColor] = useState("red")
-
+    
     let iconColor = "red";
 
     function ChangeLike(){
@@ -14,13 +14,13 @@ function Cardpic(){
         if(isLiked){
             console.log("liked");
             // isLiked = true;
-            // iconColor ="red";
+            iconColor ="red";
 
         };
         if(!isLiked){   
             console.log("unliked");
         //    isLiked = false 
-            // iconColor = "white";
+            iconColor = "white";
  
         }
     }
