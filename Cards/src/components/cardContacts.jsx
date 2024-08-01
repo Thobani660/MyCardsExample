@@ -1,4 +1,5 @@
-function Cardcontacts(){
+function Cardcontacts(top4){
+    console.log("this is cont",top4)
     return(
         <>
             <div className="Cardcontacts">

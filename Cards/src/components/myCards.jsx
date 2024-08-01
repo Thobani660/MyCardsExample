@@ -3,13 +3,14 @@ import Cardprice from "./cardPrice";
 import Cardrooms from "./cardRooms";
 import Cardcontacts from "./cardContacts";
 
-function Card({accomodation}){
-    console.log(accomodation.url);
-    console.log(accomodation.age);
-    console.log(accomodation.price);
-    console.log(accomodation.address);
-    console.log(accomodation.bedRooms);
-    console.log(accomodation.bathRooms);
+function Card({accomodation},{houses}){
+    // console.log("there" ,houses)
+    // console.log(accomodation.url);
+    // console.log(accomodation.age);
+    // console.log(accomodation.price);
+    // console.log(accomodation.address);
+    // console.log(accomodation.bedRooms);
+    // console.log(accomodation.bathRooms);
     // console.log(accomodation.relter.relferName);
     // console.log(accomodation.relter.relferCellphone);
     // console.log(accomodation.relter.relterImg);
@@ -35,10 +36,10 @@ function Card({accomodation}){
     return(
         <>
         <div className="Card">
-            <Cardpic url={accomodation.url}/>
-            <Cardprice price={accomodation.address} />
-            <Cardrooms/>
-            <Cardcontacts/>
+            <Cardpic top ={accomodation.houses} />
+            <Cardprice top2 = {accomodation.houses} />
+            <Cardrooms top3 ={accomodation.houses}/>
+            <Cardcontacts top4 ={accomodation.houses}/>
         </div>
         </>
         

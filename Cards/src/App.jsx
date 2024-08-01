@@ -20,9 +20,9 @@ function App() {
                 relter : {relferImg:"", relferName:"Tiffany ",relferCellPhone:"(555)-555-4321"}
 
   }
-   let houses = [{House1:{
+   let houses = [{
                         url: "https://media.istockphoto.com/id/1516938158/photo/3d-render-of-forest-house-with-large-windows-at-night.jpg?s=1024x1024&w=is&k=20&c=5PDIlJWllBu4cM0EGckn6exbw1FLdqXstecQbSSdzJg=",
-                        type:"DETACHED HOUSE",
+                        type:"DETACHED GREEN HOUSE",
                         age:5,
                         rand:"R750,000",
                         address:"742 Evergreen Terrace",
@@ -30,8 +30,8 @@ function App() {
                         bathRooms:2,
                         relter : {relferImg:"", relferName:"Tiffany ",relferCellPhone:"(555)-555-4321"}
 
-                  },House2:{
-                            url: "https://media.istockphoto.com/id/1516938158/photo/3d-render-of-forest-house-with-large-windows-at-night.jpg?s=1024x1024&w=is&k=20&c=5PDIlJWllBu4cM0EGckn6exbw1FLdqXstecQbSSdzJg=",
+                  },{
+                            url: "https://plus.unsplash.com/premium_photo-1683147876693-ea495fbc6eea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYWNrJTIwd29tZW58ZW58MHx8MHx8fDA%3D",
                             type:"DETACHED BlUE HOUSE",
                             age:5,
                             rand:"R890,000",
@@ -40,9 +40,9 @@ function App() {
                             bathRooms:2,
                             relter : {relferImg:"", relferName:"Tiffany ",relferCellPhone:"(555)-555-4321"}
             
-                  },House3:{
-                            url: "https://media.istockphoto.com/id/1516938158/photo/3d-render-of-forest-house-with-large-windows-at-night.jpg?s=1024x1024&w=is&k=20&c=5PDIlJWllBu4cM0EGckn6exbw1FLdqXstecQbSSdzJg=",
-                            type:"DETACHED HOUSE",
+                  },{
+                            url: "https://images.unsplash.com/photo-1528863612123-ed0abc1cb1ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJsYWNrJTIwd29tZW58ZW58MHx8MHx8fDA%3D",
+                            type:"DETACHED Grey HOUSE",
                             age:5,
                             rand:"R750,000",
                             address:"305 Evergreen Terrace",
@@ -50,7 +50,8 @@ function App() {
                             bathRooms:2,
                             relter : {relferImg:"", relferName:"Tiffany ",relferCellPhone:"(555)-555-4321"}
     
-                  }}];
+                  }];
+                  console.log("stuppid")
 
   // localStorage.setItem("myCat", "Tom");
      localStorage.setItem("isPayed",true)
@@ -61,9 +62,9 @@ function App() {
     <>
    <div style={{display:"flex",height:"90%"}}>
         <Card accomodation={house}/>
-        <Card  accomodation={houses}/>
-        <Card accomodation={houses}/>
-        <Card accomodation={houses}/>
+        {/* <Card  houses={houses[0]}/>
+        <Card houses={houses[1]}/>
+        <Card houses={houses[2]}/> */}
    </div>
     <State/>
 {/* boolesan
