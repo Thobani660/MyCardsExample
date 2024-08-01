@@ -7,8 +7,8 @@ function State(){
 
     }setCount()
 
-    const [myList,setList] =useState([]);
-    
+    // const [myList,setList] =useState([]);
+
     const list = [];
     function setList(){
         list = [10,20,30];

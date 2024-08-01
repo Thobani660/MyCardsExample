@@ -28,5 +28,6 @@ function Card(){
             <Cardcontacts/>
         </div>
         </>
+        
     )
 }export default Card;
