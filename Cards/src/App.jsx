@@ -17,7 +17,7 @@ function App() {
      localStorage.setItem("age",24)
      return (
     <>
-    <Card/>
+    {/* <Card/> */}
     <State/>
 {/* boolesan
     list
