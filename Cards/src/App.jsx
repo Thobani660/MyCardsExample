@@ -58,29 +58,51 @@ function App() {
      localStorage.setItem("favouriteCars",JSON.stringify(favouriteCars));
      localStorage.setItem("computer",JSON.stringify(computer))
      localStorage.setItem("age",24)
+
      localStorage.setItem("houses",JSON.stringify(houses))
-     let storedHouses = localStorage.getItem("houses");
-     
-let cribs = JSON.parse(storedHouses);
 
-if (cribs) {
-  const newHouse = {
-    url: "https://example.com/new-house.jpg",
-    type: "NEW HOUSE TYPE",
-    age: 10,
-    rand: "R1,000,000",
-    address: "123 New Street",
-    bedRooms: 4,
-    bathRooms: 3,
-    relter: { relferImg: "", relferName: "New Realtor", relferCellPhone: "(555)-555-1234" }
-  };
+       let storedHouses = localStorage.getItem("houses");
+      //  console.log("stored houses", storedHouses = localStorage.getItem("houses"))
+       let cribs = JSON.parse(storedHouses);
 
-  houses.push(newHouse);
-  localStorage.setItem("houses", JSON.stringify(cribs));
-} else {
-  console.error("No houses found in local storage.");
+      // console.log("new crib",cribs)
+      const newHouse = {
+        url: "https://example.com/new-house.jpg",
+        type: "NEW HOUSE TYPE",
+        age: 10,
+        rand: "R1,000,000",
+        address: "123 New Street",
+        bedRooms: 4,
+        bathRooms: 3,
+        relter: { relferImg: "", relferName: "New Realtor", relferCellPhone: "(555)-555-1234" }
+      };
+
+if (!cribs) {
+  cribs.push(newHouse);
+  // console.log("newcrib",cribs)
+  localStorage.setItem("cribs", JSON.stringify(cribs));
 }
 
+ else {
+  console.log("lessgooo",cribs.pop(newHouse))
+  console.error("No houses found in local storage.");
+}
+// console.log("local storage now", localStorage.setItem("cribs", JSON.stringify(cribs)))
+// four func create, display,delete,update
+
+function create(){
+
+};
+function display(){
+
+};
+function deleting(){
+
+
+}
+function update(){
+// delete and create
+}
 
      return (
     <>
