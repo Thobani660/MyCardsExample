@@ -3,7 +3,7 @@ import Cardprice from "./cardPrice";
 import Cardrooms from "./cardRooms";
 import Cardcontacts from "./cardContacts";
 
-function Card({accomodation},{houses}){
+function Card({accomodation}){
     // console.log("there" ,houses)
     // console.log(accomodation.url);
     // console.log(accomodation.age);
@@ -36,10 +36,10 @@ function Card({accomodation},{houses}){
     return(
         <>
         <div className="Card">
-            <Cardpic top ={accomodation.houses} />
-            <Cardprice top2 = {accomodation.houses} />
-            <Cardrooms top3 ={accomodation.houses}/>
-            <Cardcontacts top4 ={accomodation.houses}/>
+            <Cardpic top ={accomodation} />
+            <Cardprice top2 = {accomodation} />
+            <Cardrooms top3 = {accomodation}/>
+            <Cardcontacts top4 ={accomodation}/>
         </div>
         </>
         

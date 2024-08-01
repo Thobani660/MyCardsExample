@@ -1,14 +1,14 @@
-function Cardcontacts(top4){
-    console.log("this is cont",top4)
+function Cardcontacts({top4}){
+    console.log( top4.relter)
     return(
         <>
             <div className="Cardcontacts">
-                <h4 style={{color:"grey",marginLeft:"15px"}}>HEALTOR</h4>
+                <h4 style={{color:"grey",marginLeft:"15px"}}>REALTOR</h4>
                 <div className="Cont">
                     <div className="Contactspic"></div>
                     <div className="contactDetails">
-                        <h4 style={{color:"black"}}>Tiffany Heffiner</h4>
-                        <h6 style={{color:"grey"}}>(555) 555-4321</h6>
+                        <h4 style={{color:"black"}}>{ top4.relter.relferName}</h4>
+                        <h6 style={{color:"grey"}}>{top4.relter.relferCellPhone}</h6>
                     </div>
                 </div>
             </div>
