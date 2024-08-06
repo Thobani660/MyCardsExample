@@ -1,5 +1,5 @@
 function Cardcontacts({top4}){
-    console.log( top4.relter)
+    // console.log( top4.relter)
     return(
         <>
             <div className="Cardcontacts">

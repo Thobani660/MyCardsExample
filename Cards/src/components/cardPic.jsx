@@ -22,7 +22,7 @@ function Cardpic({top}){
 
         };
         if(!isLiked){   
-            console.log("unliked");
+            // console.log("unliked");
         //    isLiked = false 
             iconColor = "white";
             filledHeart = "white"

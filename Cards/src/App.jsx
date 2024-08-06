@@ -4,6 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import State from './stateViriable'
 import Card from './components/myCards'
+import TestFunc from './components/testingFunc'
+import NewJava from './components/newJavaScript'
+import AddBook from './components/addBook'
+import DisplayBook from './components/displayBooks'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +24,56 @@ function App() {
                 relter : {relferImg:"", relferName:"Tiffany ",relferCellPhone:"(555)-555-4321"}
 
   }
+
+  let bookTable = [{id:"booksTable",
+    ISBN:1343-212-233-554,
+    TITTLE: "JackOfAllTrades1",
+    NU_PG: 82,
+    EDITION:"limited-Edition1",
+    PUBLSH:"Andiswa",
+    PRICE:"R421",
+    FORMET:"A4",
+    COVERDESIGN:"pwdred-Andiswa",
+    RELEASE_DATE:"05/08/2024"
+  },
+  {id:"AuthersTable",
+    ISBN:2143-212-233-554,
+    TITTLE: "JackOfAllTrades2",
+    NU_PG: 72,
+    EDITION:"limited-Edition2",
+    PUBLSH:"Andiswa",
+    PRICE:"R521",
+    FORMET:"A4",
+    COVERDESIGN:"pwdgreen-Andiswa",
+    RELEASE_DATE:"05/08/2024"
+  },
+  {id:"booksTable",
+    ISBN:4543-212-233-554,
+    TITTLE: "JackOfAllTrades3",
+    NU_PG: 62,
+    EDITION:"limited-Edition3",
+    PUBLSH:"Andiswa",
+    PRICE:"R621",
+    FORMET:"A4",
+    COVERDESIGN:"pwdgrey-Andiswa",
+    RELEASE_DATE:"05/08/2024"
+  }
+
+
+
+
+    
+ ];
+
+ 
+
+
+   localStorage.setItem("bookTable",JSON.stringify(bookTable));
+
+  //  let pullingMyBook = JSON.parse(bookTable);
+  //  console.log("trying to fetch",pullingMyBook)
+
+
    let houses = [{
                         url: "https://media.istockphoto.com/id/1470006282/photo/for-sale-real-estate-sign-in-front-of-new-house.webp?b=1&s=170667a&w=0&k=20&c=yBoP5dTQZsTf8ZiPehFAnb1AQHc0tsedvN6FRdVmy6Q=",
                         type:"DETACHED GREEN HOUSE",
@@ -53,6 +107,9 @@ function App() {
                   }];
                   // console.log("stuppid")
 
+
+    let bookList = [];
+
   // localStorage.setItem("myCat", "Tom");
      localStorage.setItem("isPayed",true)
      localStorage.setItem("favouriteCars",JSON.stringify(favouriteCars));
@@ -77,22 +134,34 @@ function App() {
         relter: { relferImg: "", relferName: "New Realtor", relferCellPhone: "(555)-555-1234" }
       };
 
-if (!cribs) {
-  cribs.push(newHouse);
-  // console.log("newcrib",cribs)
-  localStorage.setItem("cribs", JSON.stringify(cribs));
-}
+// if (!cribs) {
+//   cribs.push(newHouse);
+//   console.log("newcrib",cribs)
+//   localStorage.setItem("cribs", JSON.stringify(cribs));
+// }
 
- else {
-  console.log("lessgooo",cribs.pop(newHouse))
-  console.error("No houses found in local storage.");
-}
+//  else {
+//   console.log("lessgooo",cribs.pop(newHouse))
+//   console.error("No houses found in local storage.");
+// }
 // console.log("local storage now", localStorage.setItem("cribs", JSON.stringify(cribs)))
 // four func create, display,delete,update
 
-function create(){
+const handleAdd = (newHouse) => {
+  let localData = localStorage.getItem("HousesForSale");
+  let houses = localData ? JSON.parse(localData) : [];
 
-};
+  // if(!Array.isArray(houses)){
+  //   houses = [houses]
+  // }
+  if (houses &&!Array.isArray(houses)) {
+    houses = [houses];
+  }
+  houses.push(newHouse)
+    localStorage.setItem("HousesForSale", JSON.stringify(newHouse))
+}
+ handleAdd(newHouse)
+
 function display(){
 
 };
@@ -103,6 +172,9 @@ function deleting(){
 function update(){
 // delete and create
 }
+ let Abook = {};
+
+
 
      return (
     <>
@@ -113,6 +185,10 @@ function update(){
         <Card accomodation={houses[2]}/>
    </div>
     <State/>
+    <TestFunc/>
+    <NewJava/>
+    <AddBook book={bookTable[0]}/>
+    <DisplayBook/>
 {/* boolesan
     list
     object
