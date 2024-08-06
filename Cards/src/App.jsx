@@ -8,6 +8,8 @@ import TestFunc from './components/testingFunc'
 import NewJava from './components/newJavaScript'
 import AddBook from './components/addBook'
 import DisplayBook from './components/displayBooks'
+import DeleteBook from './components/deleteBook'
+import UpdateBook from './updateBook'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,7 +35,7 @@ function App() {
     PUBLSH:"Andiswa",
     PRICE:"R421",
     FORMET:"A4",
-    COVERDESIGN:"pwdred-Andiswa",
+    COVERDESIGN:"https://th.bing.com/th/id/OIP.ggUdsh7LpfPtjyFzh-XqCgHaEK?w=317&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
     RELEASE_DATE:"05/08/2024"
   },
   {id:"AuthersTable",
@@ -44,7 +46,7 @@ function App() {
     PUBLSH:"Andiswa",
     PRICE:"R521",
     FORMET:"A4",
-    COVERDESIGN:"pwdgreen-Andiswa",
+    COVERDESIGN:"https://th.bing.com/th/id/OIP.ggUdsh7LpfPtjyFzh-XqCgHaEK?w=317&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
     RELEASE_DATE:"05/08/2024"
   },
   {id:"booksTable",
@@ -55,24 +57,14 @@ function App() {
     PUBLSH:"Andiswa",
     PRICE:"R621",
     FORMET:"A4",
-    COVERDESIGN:"pwdgrey-Andiswa",
+    COVERDESIGN:"https://th.bing.com/th/id/OIP.ggUdsh7LpfPtjyFzh-XqCgHaEK?w=317&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
     RELEASE_DATE:"05/08/2024"
-  }
-
-
-
-
-    
- ];
-
+  }];
  
-
-
    localStorage.setItem("bookTable",JSON.stringify(bookTable));
 
   //  let pullingMyBook = JSON.parse(bookTable);
   //  console.log("trying to fetch",pullingMyBook)
-
 
    let houses = [{
                         url: "https://media.istockphoto.com/id/1470006282/photo/for-sale-real-estate-sign-in-front-of-new-house.webp?b=1&s=170667a&w=0&k=20&c=yBoP5dTQZsTf8ZiPehFAnb1AQHc0tsedvN6FRdVmy6Q=",
@@ -189,11 +181,9 @@ function update(){
     <NewJava/>
     <AddBook book={bookTable[0]}/>
     <DisplayBook/>
-{/* boolesan
-    list
-    object
-    number
-    string */}
+    <DeleteBook/>
+    <UpdateBook/>
+
     </>
   )
 }

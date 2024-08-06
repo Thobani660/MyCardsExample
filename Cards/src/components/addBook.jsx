@@ -1,3 +1,4 @@
+// This is C in CRUD this Function create 
 function AddBook({book}){
     // localStorage.setItem("book",JSON.stringify(book))
     // const storedBookTable = localStorage.getItem('bookTable');
